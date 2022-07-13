@@ -2,5 +2,6 @@ using Nagiconomi
 using Test
 
 @testset "Nagiconomi.jl" begin
-    # Write your tests here.
+    @test Nagiconomi.greet_nagiconomi() == "Bonjour!"
+    @test Nagiconomi.greet_nagiconomi() != "Hello world!"
 end
